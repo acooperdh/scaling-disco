@@ -5,7 +5,7 @@ import requests
 
 app = Flask(__name__)
 
-
+session_token = ""
 access_key_id = ""
 secret_access_key = ""
 rds_host = ""
@@ -24,6 +24,8 @@ list_students = """
 	<p>List of students:</p>
 
 """
+# getting aws session
+def get_session():
 
 
 @app.route("/")
