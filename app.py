@@ -53,3 +53,8 @@ def list_students_func():
     # query the students table and a return a list of all students to display in
     # browser. Probably as a list in a html doc or something
     return list_students
+
+
+if __name__ == "__main__":
+    # running on host 0.0.0.0 ensures the app is being run on the public facing ip
+    app.run(host="0.0.0.0", port=5000)
